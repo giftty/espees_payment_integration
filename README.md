@@ -6,7 +6,7 @@ Quick set up
 1. Adding the script to your files.
 <code>
   Paste this script on the body of the page you want uses to pay with espees
-  <script src="git"> 
+  <script src="url?token=<your token>"> 
   </code>
 
 ## Locally hosted setup.
@@ -33,7 +33,8 @@ Initialise the function in your script like this:
       narration: "<Example Product>",
       merchant_wallet: "Merchant-wallet-address",
       success_url: "success.html",
-      fail_url: "failure.html"
+      fail_url: "failure.html",
+      token : "<your token>"
     });
   </script> 
   and that's it. Users can click the button to make payment.
