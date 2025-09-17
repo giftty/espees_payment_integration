@@ -6,7 +6,8 @@ window.Espees = (function () {
       narration,
       merchant_wallet,
       success_url,
-      fail_url
+      fail_url,
+      token
     } = config;
 
      const proxy_url = "/espees_payment_integration/backend/espees_proxy.php"
@@ -72,6 +73,7 @@ window.Espees = (function () {
           merchant_wallet: merchant_wallet,
           success_url: success_url,
           fail_url: fail_url,
+          token:token,
           user_data: {
             param1: "value1",
             param2: "value2"

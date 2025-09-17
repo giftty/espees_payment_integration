@@ -3,9 +3,9 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
-$content = file_get_contents('./../espeesdata.txt');
-$content = explode('=', $content, 2);
-$apiKey = trim($content[1]);
+// $content = file_get_contents('./../espeesdata.txt');
+// $content = explode('=', $content, 2);
+// $apiKey = trim($content[1]);
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 $action = isset($_GET['action']) ? $_GET['action'] : '';
@@ -23,7 +23,7 @@ if ($data === null) {
     echo json_encode(["error" => "Invalid JSON body."]);
     exit;
 }
-
+ $apiKey = $data['token'];
 if ($action === "initiate") {
     $url = "https://api.espees.org/v2/payment/product";
 } elseif ($action === "confirm") {
