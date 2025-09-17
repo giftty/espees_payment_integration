@@ -1,4 +1,4 @@
-# Espees Integration Example (Pure JS + PHP Proxy)
+# Espees Integration (Pure JS + PHP Proxy)
 
 ## Setup
 Quick set up
