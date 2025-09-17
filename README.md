@@ -16,8 +16,7 @@ Quick set up
 
 2. Unzip the zip file and place it on your root directory
 3. Replace placeholders token:
-   - Open the espeesdata.txt file and add your token to the file
-   - Token = `<your-token>`
+   - token = `<your-token>`
 
 
 ## Usage

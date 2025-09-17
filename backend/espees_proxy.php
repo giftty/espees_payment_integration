@@ -24,6 +24,7 @@ if ($data === null) {
     exit;
 }
  $apiKey = $data['token'];
+// echo $apiKey;
 if ($action === "initiate") {
     $url = "https://api.espees.org/v2/payment/product";
 } elseif ($action === "confirm") {

@@ -1,1 +1,1 @@
-Token = <your token>
+Token = ynE78nw7bD8zq4ecJLZmg1HFTtBZDSvF9PWHeRZn

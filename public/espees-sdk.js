@@ -9,14 +9,14 @@ window.Espees = (function () {
       fail_url,
       token
     } = config;
-
-     const proxy_url = "/espees_payment_integration/backend/espees_proxy.php"
+    const params = new URLSearchParams(window.location.search);
+    const proxy_url = "/espees_payment_integration/backend/espees_proxy.php"
     const container = document.getElementById("espees-button");
     if (!container) {
       console.error("Espees SDK: no container with id 'espees-button'");
       return;
     }
-
+    
     const button = document.createElement("button");
     button.innerText = "Pay with Espees";
     const bimag = document.createElement('img')
